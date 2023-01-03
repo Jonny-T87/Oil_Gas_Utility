@@ -18,7 +18,7 @@
 
 ### <p align="center"> - Background - </p>
 >Results:
->> A decrease in customer base and private competition increase may be why the data visuals are showing a trending decline in the number of customers and usage. 
+>> A decrease in customer base and private competition increase may be why the data visuals are showing a trending decline in the number of customers and rates. 
 
 ### <p align="center"> - Assets - </p>
 >Tools Used:
@@ -37,6 +37,8 @@
 <p align="center">
 <img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/MaxDiscountRegionsPie.png> </p>
 <p align="center">
+<img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/ScatterPlotlyNumCust.png> </p>
+<p align="center">
 <img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/NumCustActRegLine.png> </p>
 <p align="center">
 <img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/PerCustRatesBar.png> </p>
@@ -53,77 +55,64 @@
 <p align="center">
 <img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/Natural%20Gas%20by%20Rates.png> </p>
 <p align="center">
+<img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/GasHubScatterAvgD_2.png></p>
+<p align="center">
+<img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/GasHubScatterRegion_2.png></p>
+<p align="center">
+<img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/GasHubHeatMapCust_2.png> </p>
+</td>
+</tr>
+</table>
+
+## Data Visuals - OpenStreetMap & ArcGIS
+<table>
+<tr>
+<td>
+<p align="center">
+<img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/GasHubHeatMapCust_OpenStreet.png> </p>
+<p align="center">
+<img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/GasHubHeatMapCust_Esri.png> </p>
+</td>
+</tr>
+</table>
+
+## Data Visuals - Dash & Flask App
+<table>
+<tr>
+<td>
+<p align="center">
+<img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/DashPlot.png> </p>
+<p align="center">
+
+https://user-images.githubusercontent.com/104738883/210416028-59c1ba62-70da-4049-9982-da43104e4f5d.mp4
+
+[Link to Dash/Flask App Website](http://jhonnq.pythonanywhere.com/)
+</td>
+</tr>
+</table>
+
+## Data Visuals - Tableau
+<table>
+<tr>
+<td>
+<p align="center">
+<img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/Avgdaily%20Dashboard.png> </p>
+<p align="center">
+<img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/Dashboard%202.png> </p>
+<p align="center">
+<img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/Dashboard%203.png> </p>
+
+[Link to Tableau Dashboard](https://public.tableau.com/views/gdfhub3/Dashboard3?:language=en-US&:display_count=n&:origin=viz_share_link)
 </td>
 </tr>
 </table>
 
 
 
-
-
-
-Currently it is working on all NSE (India) Stocks, BSE (India) Stocks Symbol will be added soon.
-
-![](https://iharsh234.github.io/WebApp/images/demo/web_app_face.JPG)
-
-### Query Filled Form
-![](https://iharsh234.github.io/WebApp/images/demo/demo_query.JPG)
-
-### Charts
-![](https://iharsh234.github.io/WebApp/images/demo/demo_chart1.JPG)
-![](https://iharsh234.github.io/WebApp/images/demo/demo_chart2.JPG)
-![](https://iharsh234.github.io/WebApp/images/demo/demo_chart3.JPG)
-
-
-## Mobile support
-The WebApp is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
-
-![](https://iharsh234.github.io/WebApp/images/demo/mobile.png)
-
-
-
-
-## [Usage](https://iharsh234.github.io/WebApp/) 
-
-### Development
-Want to contribute? Great!
-
-To fix a bug or enhance an existing module, follow these steps:
-
-- Fork the repo
-- Create a new branch (`git checkout -b improve-feature`)
-- Make the appropriate changes in the files
-- Add changes to reflect the changes made
-- Commit your changes (`git commit -am 'Improve feature'`)
-- Push to the branch (`git push origin improve-feature`)
-- Create a Pull Request 
-
-### Bug / Feature Request
-
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/iharsh234/WebApp/issues/new) by including your search query and the expected result.
-
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/iharsh234/WebApp/issues/new). Please include sample queries and their corresponding results.
-
-
-## Built with 
-
-- [jQuery - Ajax](http://www.w3schools.com/jquery/jquery_ref_ajax.asp) - jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.
-- [Google Chart API](https://developers.google.com/chart/interactive/docs/quick_start) - Free , Rich Gallery , Customizable and Cross-browser compatible.
-- [Bootstrap](http://getbootstrap.com/) - Extensive list of components and  Bundled Javascript plugins.
-
-
-## To-do
-- Add BSE (India) Symbol to the current App.
-- Decide comparison models of Stocks. (suggestions are most welcome).
-- Another WebApp, capable of comparing at least 10 stocks.
-
 ## Team
 
-[![Harsh Vijay](https://avatars1.githubusercontent.com/u/12688534?v=3&s=144)](https://github.com/iharsh234)  | [![Quandl.com](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://www.quandl.com/)
----|---
-[Harsh Vijay ](https://github.com/iharsh234) |[Quandl](https://www.quandl.com)
+[![Jonny Tesfahun](https://avatars.githubusercontent.com/u/104738883?s=96&v=4)](https://github.com/iharsh234)  
 
-## [License](https://github.com/iharsh234/WebApp/blob/master/LICENSE.md)
+[Jonny Tesfahun](https://github.com/Jonny-T87) 
 
-MIT © [Harsh Vijay ](https://github.com/iharsh234)
 
