@@ -37,6 +37,8 @@
 <p align="center">
 <img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/MaxDiscountRegionsPie.png> </p>
 <p align="center">
+<img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/ScatterPlotlyNumCust.png> </p>
+<p align="center">
 <img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/NumCustActRegLine.png> </p>
 <p align="center">
 <img src=https://github.com/Jonny-T87/Oil_Gas_Utility/blob/main/Data/Images/PerCustRatesBar.png> </p>
