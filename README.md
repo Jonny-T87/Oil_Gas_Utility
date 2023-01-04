@@ -76,7 +76,7 @@
 </tr>
 </table>
 
-## Data Visuals - Dash & Flask App
+## Data Visuals - Dash Web App
 <table>
 <tr>
 <td>
@@ -86,7 +86,7 @@
 
 https://user-images.githubusercontent.com/104738883/210416028-59c1ba62-70da-4049-9982-da43104e4f5d.mp4
 
-[Link to Dash/Flask App Website](http://jhonnq.pythonanywhere.com/)
+[Link to Dash App Website](http://jhonnq.pythonanywhere.com/)
 </td>
 </tr>
 </table>
