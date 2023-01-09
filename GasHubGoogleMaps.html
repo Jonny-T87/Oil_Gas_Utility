@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a3dbb8ccf97b9942c6a84e56ae4081ef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a3dbb8ccf97b9942c6a84e56ae4081ef" ></div>
+        
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script>
+  $( function() {
+    $( "#maplegend" ).draggable({
+                    start: function (event, ui) {
+                        $(this).css({
+                            right: "auto",
+                            top: "auto",
+                            bottom: "auto"
+                        });
+                    }
+                });
+});
+
+  </script>
+</head>
+<body>
+
+ 
+<div id='maplegend' class='maplegend' 
+    style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.7);
+     border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+     
+<div class='legend-title'>Gas Hub Regions <sup>(draggable!)</sup></div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+    <li><span style='background:#28C50D;opacity:0.7;'></span>Central</li>
+    <li><span style='background:#0D81C5;opacity:0.7;'></span>MidWest</li>
+    <li><span style='background:#EC7C07;opacity:0.7;'></span>NorthEast</li>
+    <li><span style='background:#EC1107;opacity:0.7;'></span>SouthEast</li>
+    <li><span style='background:#FF69B4;opacity:0.7;'></span>SouthWest</li>
+    <li><span style='background:#FFA07A;opacity:0.7;'></span>Western</li>
+    <li><span style='background:#950EF9;opacity:0.7;'></span>Canada</li>
+    
+  </ul>
+</div>
+</div>
+ 
+</body>
+</html>
+
+<style type='text/css'>
+  .maplegend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .maplegend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .maplegend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+  .maplegend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+  .maplegend .legend-source {
+    font-size: 80%;
+    color: #777;
+    clear: both;
+    }
+  .maplegend a {
+    color: #777;
+    }
+</style>
+</body>
+<script>
+    
+    
+            var map_a3dbb8ccf97b9942c6a84e56ae4081ef = L.map(
+                "map_a3dbb8ccf97b9942c6a84e56ae4081ef",
+                {
+                    center: [45.523, -122.675],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1df217ebedcc78949ed82b3613e55dec = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var marker_22d1faacc87cf03640507b0a86f3d987 = L.marker(
+                [36.6864, -107.957],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_2b6d917cf629c547da0dce6efb1e814e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_22d1faacc87cf03640507b0a86f3d987.setIcon(icon_2b6d917cf629c547da0dce6efb1e814e);
+        
+    
+        var popup_262814cb553a2b43c945f6bd27a48ca2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12786949d32a5621b1ac8e76ffd8e80e = $(`<div id="html_12786949d32a5621b1ac8e76ffd8e80e" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Blanco Hub<br><sup><b>Year Est:</b> 1993<br><b>State:</b> NM<br><b>County:</b> San Juan<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 1600<br><b>Numcust:</b> 40<br><b>Avgdaily:</b> 1200<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_262814cb553a2b43c945f6bd27a48ca2.setContent(html_12786949d32a5621b1ac8e76ffd8e80e);
+            
+        
+
+        marker_22d1faacc87cf03640507b0a86f3d987.bindPopup(popup_262814cb553a2b43c945f6bd27a48ca2)
+        ;
+
+        
+    
+    
+            marker_22d1faacc87cf03640507b0a86f3d987.bindTooltip(
+                `<div>
+                     <b></b> Blanco Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e976a5b911fc58171d44fce7190db8e6 = L.marker(
+                [35.8337, -100.459],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_57cb6bc7f1be03a726f5b1b582aa51ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_e976a5b911fc58171d44fce7190db8e6.setIcon(icon_57cb6bc7f1be03a726f5b1b582aa51ff);
+        
+    
+        var popup_fb98988cd8baed0f6806074fe1f11194 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d1d15ba76f348e70c941cc99900bf78 = $(`<div id="html_5d1d15ba76f348e70c941cc99900bf78" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Buffalo Wallow Center<br><sup><b>Year Est:</b> 1994<br><b>State:</b> TX<br><b>County:</b> Hemphill<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 250<br><b>Numcust:</b> 20<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Inactive 99</div>`)[0];
+                popup_fb98988cd8baed0f6806074fe1f11194.setContent(html_5d1d15ba76f348e70c941cc99900bf78);
+            
+        
+
+        marker_e976a5b911fc58171d44fce7190db8e6.bindPopup(popup_fb98988cd8baed0f6806074fe1f11194)
+        ;
+
+        
+    
+    
+            marker_e976a5b911fc58171d44fce7190db8e6.bindTooltip(
+                `<div>
+                     <b></b> Buffalo Wallow Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e50aa110e23ba6ade8c6d78ac545d1a = L.marker(
+                [32.1596, -94.2789],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_423207d28625245ade9c266e16877963 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_6e50aa110e23ba6ade8c6d78ac545d1a.setIcon(icon_423207d28625245ade9c266e16877963);
+        
+    
+        var popup_462dcf46e7c36df839d2b8f469a49fe0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4e4c3c94a0f4b70785622eb9861ed7a = $(`<div id="html_b4e4c3c94a0f4b70785622eb9861ed7a" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Carthage Hub<br><sup><b>Year Est:</b> 1990<br><b>State:</b> TX<br><b>County:</b> Panola<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 800<br><b>Numcust:</b> 200<br><b>Avgdaily:</b> 600<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_462dcf46e7c36df839d2b8f469a49fe0.setContent(html_b4e4c3c94a0f4b70785622eb9861ed7a);
+            
+        
+
+        marker_6e50aa110e23ba6ade8c6d78ac545d1a.bindPopup(popup_462dcf46e7c36df839d2b8f469a49fe0)
+        ;
+
+        
+    
+    
+            marker_6e50aa110e23ba6ade8c6d78ac545d1a.bindTooltip(
+                `<div>
+                     <b></b> Carthage Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a0abdb397202a162c86e8296c3b13fc = L.marker(
+                [41.5002, -88.2639],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_a215931286cd7201a762c61883dffaba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a0abdb397202a162c86e8296c3b13fc.setIcon(icon_a215931286cd7201a762c61883dffaba);
+        
+    
+        var popup_1bc63db99b37dab753f875605c027417 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aad391d7bfd6ff754936de2ac676a238 = $(`<div id="html_aad391d7bfd6ff754936de2ac676a238" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Chicago Hub<br><sup><b>Year Est:</b> 1993<br><b>State:</b> IL<br><b>County:</b> Various<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 450<br><b>Numcust:</b> 10<br><b>Avgdaily:</b> 100<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_1bc63db99b37dab753f875605c027417.setContent(html_aad391d7bfd6ff754936de2ac676a238);
+            
+        
+
+        marker_0a0abdb397202a162c86e8296c3b13fc.bindPopup(popup_1bc63db99b37dab753f875605c027417)
+        ;
+
+        
+    
+    
+            marker_0a0abdb397202a162c86e8296c3b13fc.bindTooltip(
+                `<div>
+                     <b></b> Chicago Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc5f8cbb94981e99ce72c153509162c4 = L.marker(
+                [41.3979, -77.79],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_a22427239af72bf55d48b1e9ea932910 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cc5f8cbb94981e99ce72c153509162c4.setIcon(icon_a22427239af72bf55d48b1e9ea932910);
+        
+    
+        var popup_0e5dcb73f14cda500aaf39547b7d4e45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_700de6683c2f599a19677d1d198f58fc = $(`<div id="html_700de6683c2f599a19677d1d198f58fc" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Ellisburg-Leidy Center<br><sup><b>Year Est:</b> 1993<br><b>State:</b> PA<br><b>County:</b> Potter<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 520<br><b>Numcust:</b> 85<br><b>Avgdaily:</b> 432<br><b>Status:</b></sup> Inactive 08</div>`)[0];
+                popup_0e5dcb73f14cda500aaf39547b7d4e45.setContent(html_700de6683c2f599a19677d1d198f58fc);
+            
+        
+
+        marker_cc5f8cbb94981e99ce72c153509162c4.bindPopup(popup_0e5dcb73f14cda500aaf39547b7d4e45)
+        ;
+
+        
+    
+    
+            marker_cc5f8cbb94981e99ce72c153509162c4.bindTooltip(
+                `<div>
+                     <b></b> Ellisburg-Leidy Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_302f29b5376ac488e078c27dc21e4c27 = L.marker(
+                [29.831, -94.1679],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_3736fc8247fa740ab3c8485c2c6061c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_302f29b5376ac488e078c27dc21e4c27.setIcon(icon_3736fc8247fa740ab3c8485c2c6061c0);
+        
+    
+        var popup_46eeb81f81a1aa189dbc63c2e5606083 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e8c418574b7713beb34b9f416109b54 = $(`<div id="html_7e8c418574b7713beb34b9f416109b54" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Spindletop Storage Hub<br><sup><b>Year Est:</b> 1998<br><b>State:</b> TX<br><b>County:</b> Jefferson<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 750<br><b>Numcust:</b> 20<br><b>Avgdaily:</b> 700<br><b>Status:</b></sup> Inactive 08</div>`)[0];
+                popup_46eeb81f81a1aa189dbc63c2e5606083.setContent(html_7e8c418574b7713beb34b9f416109b54);
+            
+        
+
+        marker_302f29b5376ac488e078c27dc21e4c27.bindPopup(popup_46eeb81f81a1aa189dbc63c2e5606083)
+        ;
+
+        
+    
+    
+            marker_302f29b5376ac488e078c27dc21e4c27.bindTooltip(
+                `<div>
+                     <b></b> Spindletop Storage Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5eab79647d3fec80128ac5f57bf8ba3 = L.marker(
+                [29.774, -95.3936],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_e07d074b14ad5a7932f8706309061c01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_b5eab79647d3fec80128ac5f57bf8ba3.setIcon(icon_e07d074b14ad5a7932f8706309061c01);
+        
+    
+        var popup_7872e1f8442438ca4faee0edb25552ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_137af9d54ebd953711a37b0881b5836c = $(`<div id="html_137af9d54ebd953711a37b0881b5836c" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Houston Hub<br><sup><b>Year Est:</b> 1992<br><b>State:</b> TX<br><b>County:</b> Harris<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 110<br><b>Numcust:</b> 200<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Inactive 03</div>`)[0];
+                popup_7872e1f8442438ca4faee0edb25552ef.setContent(html_137af9d54ebd953711a37b0881b5836c);
+            
+        
+
+        marker_b5eab79647d3fec80128ac5f57bf8ba3.bindPopup(popup_7872e1f8442438ca4faee0edb25552ef)
+        ;
+
+        
+    
+    
+            marker_b5eab79647d3fec80128ac5f57bf8ba3.bindTooltip(
+                `<div>
+                     <b></b> Houston Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee9759665a59af1be490563abd0b7520 = L.marker(
+                [29.8331, -95.8512],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_7b47c4b451b930ce2d6427ee2fef5ae2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_ee9759665a59af1be490563abd0b7520.setIcon(icon_7b47c4b451b930ce2d6427ee2fef5ae2);
+        
+    
+        var popup_203981563be0ae7ecaebea0f8331eda1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bef9bcb1ae5e91fdaed70b9c026db215 = $(`<div id="html_bef9bcb1ae5e91fdaed70b9c026db215" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Katy (DCP) Hub<br><sup><b>Year Est:</b> 1995<br><b>State:</b> TX<br><b>County:</b> Waller<br><b>Rates:</b> Market Based<br><b>Maxthru:</b> 500<br><b>Numcust:</b> 12<br><b>Avgdaily:</b> 300<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_203981563be0ae7ecaebea0f8331eda1.setContent(html_bef9bcb1ae5e91fdaed70b9c026db215);
+            
+        
+
+        marker_ee9759665a59af1be490563abd0b7520.bindPopup(popup_203981563be0ae7ecaebea0f8331eda1)
+        ;
+
+        
+    
+    
+            marker_ee9759665a59af1be490563abd0b7520.bindTooltip(
+                `<div>
+                     <b></b> Katy (DCP) Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad246a8ef0487075644b22cd88ad5cd5 = L.marker(
+                [39.4159, -84.1811],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_8cce9839211156b8b289dc8c0e8c7f42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad246a8ef0487075644b22cd88ad5cd5.setIcon(icon_8cce9839211156b8b289dc8c0e8c7f42);
+        
+    
+        var popup_3d6163185a9826de450d5a90fed9288a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3a1d36a3b452045f7193cf283c03c07 = $(`<div id="html_c3a1d36a3b452045f7193cf283c03c07" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Lebanon Hub<br><sup><b>Year Est:</b> 1994<br><b>State:</b> OH<br><b>County:</b> Warren<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 0<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Inactive 98</div>`)[0];
+                popup_3d6163185a9826de450d5a90fed9288a.setContent(html_c3a1d36a3b452045f7193cf283c03c07);
+            
+        
+
+        marker_ad246a8ef0487075644b22cd88ad5cd5.bindPopup(popup_3d6163185a9826de450d5a90fed9288a)
+        ;
+
+        
+    
+    
+            marker_ad246a8ef0487075644b22cd88ad5cd5.bindTooltip(
+                `<div>
+                     <b></b> Lebanon Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1974ff89bb958e8809de4b14e68aac2c = L.marker(
+                [29.964, -92.4296],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_6d5d38585d1a38c1b32136fb6f8fb5b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_1974ff89bb958e8809de4b14e68aac2c.setIcon(icon_6d5d38585d1a38c1b32136fb6f8fb5b0);
+        
+    
+        var popup_a08594bf46bc27bfe4ebea05cba15656 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eeb119e5c30263d8dc2c073de48a74cb = $(`<div id="html_eeb119e5c30263d8dc2c073de48a74cb" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Louisiana Hub<br><sup><b>Year Est:</b> 1994<br><b>State:</b> LA<br><b>County:</b> Assumption<br><b>Rates:</b> Market Based<br><b>Maxthru:</b> 400<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Inactive 99</div>`)[0];
+                popup_a08594bf46bc27bfe4ebea05cba15656.setContent(html_eeb119e5c30263d8dc2c073de48a74cb);
+            
+        
+
+        marker_1974ff89bb958e8809de4b14e68aac2c.bindPopup(popup_a08594bf46bc27bfe4ebea05cba15656)
+        ;
+
+        
+    
+    
+            marker_1974ff89bb958e8809de4b14e68aac2c.bindTooltip(
+                `<div>
+                     <b></b> Louisiana Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44c78e3a0ee8532450a6ccb397b563c5 = L.marker(
+                [30.1568, -94.8578],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_c9d8d48333d3948c68e99494b808cc73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_44c78e3a0ee8532450a6ccb397b563c5.setIcon(icon_c9d8d48333d3948c68e99494b808cc73);
+        
+    
+        var popup_a3259ff4d97a769f40a8e5992e367a76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_060be38a94accc2f57852e579bdcb451 = $(`<div id="html_060be38a94accc2f57852e579bdcb451" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Moss Bluff  Hub<br><sup><b>Year Est:</b> 1994<br><b>State:</b> TX<br><b>County:</b> Liberty<br><b>Rates:</b> Market Based<br><b>Maxthru:</b> 2000<br><b>Numcust:</b> 40<br><b>Avgdaily:</b> 1600<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_a3259ff4d97a769f40a8e5992e367a76.setContent(html_060be38a94accc2f57852e579bdcb451);
+            
+        
+
+        marker_44c78e3a0ee8532450a6ccb397b563c5.bindPopup(popup_a3259ff4d97a769f40a8e5992e367a76)
+        ;
+
+        
+    
+    
+            marker_44c78e3a0ee8532450a6ccb397b563c5.bindTooltip(
+                `<div>
+                     <b></b> Moss Bluff  Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3faa41ac097fec899bee07d10d3f810 = L.marker(
+                [32.7035, -92.0616],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_c9f153339f2e3dc67039762051e15eea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_c3faa41ac097fec899bee07d10d3f810.setIcon(icon_c9f153339f2e3dc67039762051e15eea);
+        
+    
+        var popup_67510f9fed1906bd7ec0cc43a4660d2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cc31d28df4a6da970c73ebdfe5e657b = $(`<div id="html_2cc31d28df4a6da970c73ebdfe5e657b" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Perryville (Ouachita) Hub<br><sup><b>Year Est:</b> 1997<br><b>State:</b> LA<br><b>County:</b> Quachita<br><b>Rates:</b>  <br><b>Maxthru:</b> 550<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Canceled 99</div>`)[0];
+                popup_67510f9fed1906bd7ec0cc43a4660d2f.setContent(html_2cc31d28df4a6da970c73ebdfe5e657b);
+            
+        
+
+        marker_c3faa41ac097fec899bee07d10d3f810.bindPopup(popup_67510f9fed1906bd7ec0cc43a4660d2f)
+        ;
+
+        
+    
+    
+            marker_c3faa41ac097fec899bee07d10d3f810.bindTooltip(
+                `<div>
+                     <b></b> Perryville (Ouachita) Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b4138a8ac0b97ef982abf8701b235d6 = L.marker(
+                [29.9707, -91.1768],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_09de71f7173eab968cb0015cde926658 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_0b4138a8ac0b97ef982abf8701b235d6.setIcon(icon_09de71f7173eab968cb0015cde926658);
+        
+    
+        var popup_918039cd63c510344663cb8fdb803608 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc05ac1fa973490d8f151cd3569494f1 = $(`<div id="html_bc05ac1fa973490d8f151cd3569494f1" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Texaco Gulf Star Center<br><sup><b>Year Est:</b> 1993<br><b>State:</b> LA<br><b>County:</b> nan<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 330<br><b>Numcust:</b> 350<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Inactive 03</div>`)[0];
+                popup_918039cd63c510344663cb8fdb803608.setContent(html_bc05ac1fa973490d8f151cd3569494f1);
+            
+        
+
+        marker_0b4138a8ac0b97ef982abf8701b235d6.bindPopup(popup_918039cd63c510344663cb8fdb803608)
+        ;
+
+        
+    
+    
+            marker_0b4138a8ac0b97ef982abf8701b235d6.bindTooltip(
+                `<div>
+                     <b></b> Texaco Gulf Star Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b955f7d3be01874a76c3b18fa85808c = L.marker(
+                [31.629, -103.109],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_b81c8ea8b8f471e27572b0f4ad5a9b69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_3b955f7d3be01874a76c3b18fa85808c.setIcon(icon_b81c8ea8b8f471e27572b0f4ad5a9b69);
+        
+    
+        var popup_23de69de8f6c81533101ec33bd029f8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_234407575178cf45ed4288fcd1084adb = $(`<div id="html_234407575178cf45ed4288fcd1084adb" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Waha (Atmos) Hub<br><sup><b>Year Est:</b> 1995<br><b>State:</b> TX<br><b>County:</b> Pecos<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 650<br><b>Numcust:</b> 50<br><b>Avgdaily:</b> 300<br><b>Status:</b></sup> Inactive 05</div>`)[0];
+                popup_23de69de8f6c81533101ec33bd029f8d.setContent(html_234407575178cf45ed4288fcd1084adb);
+            
+        
+
+        marker_3b955f7d3be01874a76c3b18fa85808c.bindPopup(popup_23de69de8f6c81533101ec33bd029f8d)
+        ;
+
+        
+    
+    
+            marker_3b955f7d3be01874a76c3b18fa85808c.bindTooltip(
+                `<div>
+                     <b></b> Waha (Atmos) Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2a6122f47ea04f89e067e7cc6bf8eba = L.marker(
+                [31.2251, -103.113],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_f58bafa5bb83ca6fb9193d970db2a40e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_f2a6122f47ea04f89e067e7cc6bf8eba.setIcon(icon_f58bafa5bb83ca6fb9193d970db2a40e);
+        
+    
+        var popup_f5e1123b795a9db67ea65bd4db3e9249 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdac44866622409d9a238768d14100ba = $(`<div id="html_bdac44866622409d9a238768d14100ba" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Waha (DCP/Atmos) Hub<br><sup><b>Year Est:</b> 1995<br><b>State:</b> TX<br><b>County:</b> Pecos<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 650<br><b>Numcust:</b> 62<br><b>Avgdaily:</b> 300<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_f5e1123b795a9db67ea65bd4db3e9249.setContent(html_bdac44866622409d9a238768d14100ba);
+            
+        
+
+        marker_f2a6122f47ea04f89e067e7cc6bf8eba.bindPopup(popup_f5e1123b795a9db67ea65bd4db3e9249)
+        ;
+
+        
+    
+    
+            marker_f2a6122f47ea04f89e067e7cc6bf8eba.bindTooltip(
+                `<div>
+                     <b></b> Waha (DCP/Atmos) Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7be9c4a163eb2eb82fdf342e99e1a7d = L.marker(
+                [30.2695, -92.3574],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_fafe0c265884deb4bb682b52c65d4c4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_d7be9c4a163eb2eb82fdf342e99e1a7d.setIcon(icon_fafe0c265884deb4bb682b52c65d4c4b);
+        
+    
+        var popup_fcc44bfefc3451fe23e621d5d7df70f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93bd79c476e430bd3e3081878b7852b6 = $(`<div id="html_93bd79c476e430bd3e3081878b7852b6" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Egan Hub<br><sup><b>Year Est:</b> 1995<br><b>State:</b> LA<br><b>County:</b> Acadia<br><b>Rates:</b> Market Based<br><b>Maxthru:</b> 2500<br><b>Numcust:</b> 40<br><b>Avgdaily:</b> 2000<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_fcc44bfefc3451fe23e621d5d7df70f4.setContent(html_93bd79c476e430bd3e3081878b7852b6);
+            
+        
+
+        marker_d7be9c4a163eb2eb82fdf342e99e1a7d.bindPopup(popup_fcc44bfefc3451fe23e621d5d7df70f4)
+        ;
+
+        
+    
+    
+            marker_d7be9c4a163eb2eb82fdf342e99e1a7d.bindTooltip(
+                `<div>
+                     <b></b> Egan Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab8a8ca00a3b1f16ef6c38725c2c16a4 = L.marker(
+                [30.9118, -92.5285],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_ce8aaf748deaa41727b750305f08aa81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_ab8a8ca00a3b1f16ef6c38725c2c16a4.setIcon(icon_ce8aaf748deaa41727b750305f08aa81);
+        
+    
+        var popup_ee212410618f7d32ec17cbdffeafbe1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_769d36bc4bd27b54dd612d487c8be8fa = $(`<div id="html_769d36bc4bd27b54dd612d487c8be8fa" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Louisiana Intrastate Gas Center<br><sup><b>Year Est:</b> 1999<br><b>State:</b> LA<br><b>County:</b> Iberia<br><b>Rates:</b> Market Based<br><b>Maxthru:</b> 360<br><b>Numcust:</b> 50<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Inactive 99</div>`)[0];
+                popup_ee212410618f7d32ec17cbdffeafbe1d.setContent(html_769d36bc4bd27b54dd612d487c8be8fa);
+            
+        
+
+        marker_ab8a8ca00a3b1f16ef6c38725c2c16a4.bindPopup(popup_ee212410618f7d32ec17cbdffeafbe1d)
+        ;
+
+        
+    
+    
+            marker_ab8a8ca00a3b1f16ef6c38725c2c16a4.bindTooltip(
+                `<div>
+                     <b></b> Louisiana Intrastate Gas Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73d6d3f11477d8caf655fc3d3d9ae3a3 = L.marker(
+                [29.7501, -95.7861],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_95a9d898d0b7f296f09e91ca117df9c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_73d6d3f11477d8caf655fc3d3d9ae3a3.setIcon(icon_95a9d898d0b7f296f09e91ca117df9c6);
+        
+    
+        var popup_9756b87d816dfa8306f56139ad18f60b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c82eedd07bdffdd9d525e8b759974110 = $(`<div id="html_c82eedd07bdffdd9d525e8b759974110" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Katy Storage Center<br><sup><b>Year Est:</b> 1993<br><b>State:</b> TX<br><b>County:</b> Fort Bend<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 700<br><b>Numcust:</b> 30<br><b>Avgdaily:</b> 1400<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_9756b87d816dfa8306f56139ad18f60b.setContent(html_c82eedd07bdffdd9d525e8b759974110);
+            
+        
+
+        marker_73d6d3f11477d8caf655fc3d3d9ae3a3.bindPopup(popup_9756b87d816dfa8306f56139ad18f60b)
+        ;
+
+        
+    
+    
+            marker_73d6d3f11477d8caf655fc3d3d9ae3a3.bindTooltip(
+                `<div>
+                     <b></b> Katy Storage Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2e44350e211aaa2dc8fb5ebdffe6052 = L.marker(
+                [30.8163, -102.331],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_931319401e948626df8426d811dd31ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_d2e44350e211aaa2dc8fb5ebdffe6052.setIcon(icon_931319401e948626df8426d811dd31ae);
+        
+    
+        var popup_9c85e5cc53d0d3b79a0e23ce062f5bfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbcfc665a597abf0344bb4b78b2318cf = $(`<div id="html_bbcfc665a597abf0344bb4b78b2318cf" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Waha  (ENSTOR) Hub<br><sup><b>Year Est:</b> 2009<br><b>State:</b> TX<br><b>County:</b> Pecos<br><b>Rates:</b>  <br><b>Maxthru:</b> 800<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 450<br><b>Status:</b></sup> Proposed 09</div>`)[0];
+                popup_9c85e5cc53d0d3b79a0e23ce062f5bfa.setContent(html_bbcfc665a597abf0344bb4b78b2318cf);
+            
+        
+
+        marker_d2e44350e211aaa2dc8fb5ebdffe6052.bindPopup(popup_9c85e5cc53d0d3b79a0e23ce062f5bfa)
+        ;
+
+        
+    
+    
+            marker_d2e44350e211aaa2dc8fb5ebdffe6052.bindTooltip(
+                `<div>
+                     <b></b> Waha  (ENSTOR) Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_487e7e5e3e0c62bf0de93842f6daee18 = L.marker(
+                [27.5488, -97.6003],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_2d9cc0d4b199e76ea56c8fe6a0e238b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_487e7e5e3e0c62bf0de93842f6daee18.setIcon(icon_2d9cc0d4b199e76ea56c8fe6a0e238b1);
+        
+    
+        var popup_3b930cc468927731ea88210e097fd88e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c444c882f2cf7b9ba584a4cbd23b8d6d = $(`<div id="html_c444c882f2cf7b9ba584a4cbd23b8d6d" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Aqua Dulce Hub<br><sup><b>Year Est:</b> 1990<br><b>State:</b> TX<br><b>County:</b> Nueces<br><b>Rates:</b> State Tariff<br><b>Maxthru:</b> 600<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 400<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_3b930cc468927731ea88210e097fd88e.setContent(html_c444c882f2cf7b9ba584a4cbd23b8d6d);
+            
+        
+
+        marker_487e7e5e3e0c62bf0de93842f6daee18.bindPopup(popup_3b930cc468927731ea88210e097fd88e)
+        ;
+
+        
+    
+    
+            marker_487e7e5e3e0c62bf0de93842f6daee18.bindTooltip(
+                `<div>
+                     <b></b> Aqua Dulce Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c3aaee0aa6044ac3e7b32fa6dd2b21b = L.marker(
+                [42.2222, -83.4014],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_b9fe6a01e1527b0baf97adcef707b23f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c3aaee0aa6044ac3e7b32fa6dd2b21b.setIcon(icon_b9fe6a01e1527b0baf97adcef707b23f);
+        
+    
+        var popup_f5a991e04ca7c8cb3af52eddc5d302d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_440b5b73bd97b9efbd89cdf54488c915 = $(`<div id="html_440b5b73bd97b9efbd89cdf54488c915" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Grand Lacs Hub<br><sup><b>Year Est:</b> 1995<br><b>State:</b> MI<br><b>County:</b> St Cair<br><b>Rates:</b> Market Based<br><b>Maxthru:</b> 250<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Inactive 99</div>`)[0];
+                popup_f5a991e04ca7c8cb3af52eddc5d302d4.setContent(html_440b5b73bd97b9efbd89cdf54488c915);
+            
+        
+
+        marker_9c3aaee0aa6044ac3e7b32fa6dd2b21b.bindPopup(popup_f5a991e04ca7c8cb3af52eddc5d302d4)
+        ;
+
+        
+    
+    
+            marker_9c3aaee0aa6044ac3e7b32fa6dd2b21b.bindTooltip(
+                `<div>
+                     <b></b> Grand Lacs Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_842660a8bbe3c828175d4d390d7095ba = L.marker(
+                [37.8699, -97.7721],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_2213c0bd550f77341a496cc4aa509a92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_842660a8bbe3c828175d4d390d7095ba.setIcon(icon_2213c0bd550f77341a496cc4aa509a92);
+        
+    
+        var popup_75cd944589de4835a5ed6a5f12501705 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d155214dbedf023096e37eb3ba74a2b = $(`<div id="html_3d155214dbedf023096e37eb3ba74a2b" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Mid-Continent Center<br><sup><b>Year Est:</b> 1995<br><b>State:</b> KS<br><b>County:</b> nan<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 630<br><b>Numcust:</b> 10<br><b>Avgdaily:</b> 340<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_75cd944589de4835a5ed6a5f12501705.setContent(html_3d155214dbedf023096e37eb3ba74a2b);
+            
+        
+
+        marker_842660a8bbe3c828175d4d390d7095ba.bindPopup(popup_75cd944589de4835a5ed6a5f12501705)
+        ;
+
+        
+    
+    
+            marker_842660a8bbe3c828175d4d390d7095ba.bindTooltip(
+                `<div>
+                     <b></b> Mid-Continent Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e36b8873bffb0e4320cc91502c8c3bf = L.marker(
+                [40.5819, -78.1274],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_0e7b85ea9586105b18c326a1c5ea1a95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2e36b8873bffb0e4320cc91502c8c3bf.setIcon(icon_0e7b85ea9586105b18c326a1c5ea1a95);
+        
+    
+        var popup_d467887f1e7c5d7993f3bc5bd73a727f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_564ddc4325c90dac445b56f869c2d872 = $(`<div id="html_564ddc4325c90dac445b56f869c2d872" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Dominion Hub<br><sup><b>Year Est:</b> 1994<br><b>State:</b> PA<br><b>County:</b> nan<br><b>Rates:</b> Market Based<br><b>Maxthru:</b> 1745<br><b>Numcust:</b> 250<br><b>Avgdaily:</b> 2500<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_d467887f1e7c5d7993f3bc5bd73a727f.setContent(html_564ddc4325c90dac445b56f869c2d872);
+            
+        
+
+        marker_2e36b8873bffb0e4320cc91502c8c3bf.bindPopup(popup_d467887f1e7c5d7993f3bc5bd73a727f)
+        ;
+
+        
+    
+    
+            marker_2e36b8873bffb0e4320cc91502c8c3bf.bindTooltip(
+                `<div>
+                     <b></b> Dominion Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_420b512bac6371d0e9f18516deb82e5e = L.marker(
+                [41.1416, -78.9074],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_5c18b7c0f5d0f661d3056576b740162f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_420b512bac6371d0e9f18516deb82e5e.setIcon(icon_5c18b7c0f5d0f661d3056576b740162f);
+        
+    
+        var popup_f4c337ce2b5e87249daeb16d86e0514b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9be6b9b4b0092b791c4f4135da49190c = $(`<div id="html_9be6b9b4b0092b791c4f4135da49190c" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Columbia Gas Center<br><sup><b>Year Est:</b> 1995<br><b>State:</b> PA<br><b>County:</b> nan<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 2010<br><b>Numcust:</b> 50<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Inactive 03</div>`)[0];
+                popup_f4c337ce2b5e87249daeb16d86e0514b.setContent(html_9be6b9b4b0092b791c4f4135da49190c);
+            
+        
+
+        marker_420b512bac6371d0e9f18516deb82e5e.bindPopup(popup_f4c337ce2b5e87249daeb16d86e0514b)
+        ;
+
+        
+    
+    
+            marker_420b512bac6371d0e9f18516deb82e5e.bindTooltip(
+                `<div>
+                     <b></b> Columbia Gas Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81b71f9207260d72831fc9763d9feebf = L.marker(
+                [41.7912, -110.306],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_8b4917524c4cb75ca7da14b6ac1f273a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_81b71f9207260d72831fc9763d9feebf.setIcon(icon_8b4917524c4cb75ca7da14b6ac1f273a);
+        
+    
+        var popup_32e285dffc9e2cf25d2e8b0a136465a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab47223c5eb88b6e9a7e53e81bfa10fa = $(`<div id="html_ab47223c5eb88b6e9a7e53e81bfa10fa" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Rocky Mountain Center<br><sup><b>Year Est:</b> 1995<br><b>State:</b> WY<br><b>County:</b> Lincoln<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 360<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Inactive 99</div>`)[0];
+                popup_32e285dffc9e2cf25d2e8b0a136465a1.setContent(html_ab47223c5eb88b6e9a7e53e81bfa10fa);
+            
+        
+
+        marker_81b71f9207260d72831fc9763d9feebf.bindPopup(popup_32e285dffc9e2cf25d2e8b0a136465a1)
+        ;
+
+        
+    
+    
+            marker_81b71f9207260d72831fc9763d9feebf.bindTooltip(
+                `<div>
+                     <b></b> Rocky Mountain Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c613d3ef1ff9c11948ee7464dfa150f = L.marker(
+                [41.2974, -110.508],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_eef6457cffdfe2be063ec54c5324cb9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8c613d3ef1ff9c11948ee7464dfa150f.setIcon(icon_eef6457cffdfe2be063ec54c5324cb9e);
+        
+    
+        var popup_8005acca746679539b8e759b0f020327 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9600ed72193e460c83a0162cd01123b1 = $(`<div id="html_9600ed72193e460c83a0162cd01123b1" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Western Center<br><sup><b>Year Est:</b> 1995<br><b>State:</b> WY<br><b>County:</b> Unita<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 511<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Inactive 99</div>`)[0];
+                popup_8005acca746679539b8e759b0f020327.setContent(html_9600ed72193e460c83a0162cd01123b1);
+            
+        
+
+        marker_8c613d3ef1ff9c11948ee7464dfa150f.bindPopup(popup_8005acca746679539b8e759b0f020327)
+        ;
+
+        
+    
+    
+            marker_8c613d3ef1ff9c11948ee7464dfa150f.bindTooltip(
+                `<div>
+                     <b></b> Western Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae71c6ca2f9d7d94955527d249021aaf = L.marker(
+                [35.8263, -119.373],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_3c6f87c07ee5f559b6035b3b812ca046 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_ae71c6ca2f9d7d94955527d249021aaf.setIcon(icon_3c6f87c07ee5f559b6035b3b812ca046);
+        
+    
+        var popup_dcfda62b3fb8ffe2b9a7647abb9384ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc2b059e3e89efcece0809e70cd88580 = $(`<div id="html_dc2b059e3e89efcece0809e70cd88580" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> California Energy Hub<br><sup><b>Year Est:</b> 1994<br><b>State:</b> CA<br><b>County:</b> nan<br><b>Rates:</b> FERC/State Tif<br><b>Maxthru:</b> 3000<br><b>Numcust:</b> 60<br><b>Avgdaily:</b> 900<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_dcfda62b3fb8ffe2b9a7647abb9384ec.setContent(html_dc2b059e3e89efcece0809e70cd88580);
+            
+        
+
+        marker_ae71c6ca2f9d7d94955527d249021aaf.bindPopup(popup_dcfda62b3fb8ffe2b9a7647abb9384ec)
+        ;
+
+        
+    
+    
+            marker_ae71c6ca2f9d7d94955527d249021aaf.bindTooltip(
+                `<div>
+                     <b></b> California Energy Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8dd44769c659dd05a351510c01183e6 = L.marker(
+                [44.6846, -121.002],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_5d7f839a5d6199b652c11f8b541599cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_e8dd44769c659dd05a351510c01183e6.setIcon(icon_5d7f839a5d6199b652c11f8b541599cd);
+        
+    
+        var popup_e3f785828a9879a2277235928c32577c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7aea0e2c0105922150fca10cee292bcd = $(`<div id="html_7aea0e2c0105922150fca10cee292bcd" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> GTNW Market Center<br><sup><b>Year Est:</b> 1994<br><b>State:</b> OR<br><b>County:</b> nan<br><b>Rates:</b> FERC Tariff<br><b>Maxthru:</b> 2820<br><b>Numcust:</b> 660<br><b>Avgdaily:</b> 2300<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_e3f785828a9879a2277235928c32577c.setContent(html_7aea0e2c0105922150fca10cee292bcd);
+            
+        
+
+        marker_e8dd44769c659dd05a351510c01183e6.bindPopup(popup_e3f785828a9879a2277235928c32577c)
+        ;
+
+        
+    
+    
+            marker_e8dd44769c659dd05a351510c01183e6.bindTooltip(
+                `<div>
+                     <b></b> GTNW Market Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aac6912cd38b7dda6e09eacb54752729 = L.marker(
+                [34.6888, -119.368],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_74a00ab6eb5446f1ca86a47aa22ab660 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_aac6912cd38b7dda6e09eacb54752729.setIcon(icon_74a00ab6eb5446f1ca86a47aa22ab660);
+        
+    
+        var popup_2284fa98829c90c2d99b8f7932022c2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04bf41ad374ddcf1a17c089138466c61 = $(`<div id="html_04bf41ad374ddcf1a17c089138466c61" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Ten Section Hub<br><sup><b>Year Est:</b> 1998<br><b>State:</b> CA<br><b>County:</b> Kern<br><b>Rates:</b>  <br><b>Maxthru:</b> 0<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Canceled 01</div>`)[0];
+                popup_2284fa98829c90c2d99b8f7932022c2a.setContent(html_04bf41ad374ddcf1a17c089138466c61);
+            
+        
+
+        marker_aac6912cd38b7dda6e09eacb54752729.bindPopup(popup_2284fa98829c90c2d99b8f7932022c2a)
+        ;
+
+        
+    
+    
+            marker_aac6912cd38b7dda6e09eacb54752729.bindTooltip(
+                `<div>
+                     <b></b> Ten Section Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_886d3cec402475ccd0beab1c0b3bd925 = L.marker(
+                [32.4354, -91.5186],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_d0ffa387b1d53c8678c4a9fc3e1090d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_886d3cec402475ccd0beab1c0b3bd925.setIcon(icon_d0ffa387b1d53c8678c4a9fc3e1090d0);
+        
+    
+        var popup_d5729f18bad35fc5f121cbc5570068a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e63e78d0d6a24eae1f9f6616c89ad79 = $(`<div id="html_4e63e78d0d6a24eae1f9f6616c89ad79" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Perryville Hub<br><sup><b>Year Est:</b> 1994<br><b>State:</b> LA<br><b>County:</b> Richland<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 2200<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 1800<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_d5729f18bad35fc5f121cbc5570068a5.setContent(html_4e63e78d0d6a24eae1f9f6616c89ad79);
+            
+        
+
+        marker_886d3cec402475ccd0beab1c0b3bd925.bindPopup(popup_d5729f18bad35fc5f121cbc5570068a5)
+        ;
+
+        
+    
+    
+            marker_886d3cec402475ccd0beab1c0b3bd925.bindTooltip(
+                `<div>
+                     <b></b> Perryville Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9413ebb53c71cf4a6a2a6270783a8590 = L.marker(
+                [42.4401, -77.461],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_04ad831e3651f47f665b5b15785f529c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9413ebb53c71cf4a6a2a6270783a8590.setIcon(icon_04ad831e3651f47f665b5b15785f529c);
+        
+    
+        var popup_9a0c6b8bb1461ec5b91136f383dcdd40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c720b0780802fed92b33d632cd64da7 = $(`<div id="html_3c720b0780802fed92b33d632cd64da7" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Avoca Hub<br><sup><b>Year Est:</b> 1997<br><b>State:</b> PA<br><b>County:</b> Steuben<br><b>Rates:</b> Market Based<br><b>Maxthru:</b> 500<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Canceled 04</div>`)[0];
+                popup_9a0c6b8bb1461ec5b91136f383dcdd40.setContent(html_3c720b0780802fed92b33d632cd64da7);
+            
+        
+
+        marker_9413ebb53c71cf4a6a2a6270783a8590.bindPopup(popup_9a0c6b8bb1461ec5b91136f383dcdd40)
+        ;
+
+        
+    
+    
+            marker_9413ebb53c71cf4a6a2a6270783a8590.bindTooltip(
+                `<div>
+                     <b></b> Avoca Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f5d249c30eb0aa572f72a381e8183ae = L.marker(
+                [42.6581, -74.1785],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_7526f215fd93ea1f01c9408efb01c7e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3f5d249c30eb0aa572f72a381e8183ae.setIcon(icon_7526f215fd93ea1f01c9408efb01c7e4);
+        
+    
+        var popup_7ee541820f5ee3da1208d901ce51caf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6e13e470bc663a26795f3d3db66fda1 = $(`<div id="html_d6e13e470bc663a26795f3d3db66fda1" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Iroquois Center<br><sup><b>Year Est:</b> 1996<br><b>State:</b> NY<br><b>County:</b> nan<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 1200<br><b>Numcust:</b> 55<br><b>Avgdaily:</b> 1400<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_7ee541820f5ee3da1208d901ce51caf5.setContent(html_d6e13e470bc663a26795f3d3db66fda1);
+            
+        
+
+        marker_3f5d249c30eb0aa572f72a381e8183ae.bindPopup(popup_7ee541820f5ee3da1208d901ce51caf5)
+        ;
+
+        
+    
+    
+            marker_3f5d249c30eb0aa572f72a381e8183ae.bindTooltip(
+                `<div>
+                     <b></b> Iroquois Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80a204fff6bceea4cf7199fc5b67fe0a = L.marker(
+                [41.9222, -77.1315],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_ecf7b4b6ca9f1ce857a0562edb301186 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_80a204fff6bceea4cf7199fc5b67fe0a.setIcon(icon_ecf7b4b6ca9f1ce857a0562edb301186);
+        
+    
+        var popup_8877b1aa35d41a02e30bbb7bd978f881 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_738ed10e63f310ae9879de3bf96b970b = $(`<div id="html_738ed10e63f310ae9879de3bf96b970b" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Tioga Hub<br><sup><b>Year Est:</b> 1997<br><b>State:</b> PA<br><b>County:</b> Tioga<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 500<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Canceled 03</div>`)[0];
+                popup_8877b1aa35d41a02e30bbb7bd978f881.setContent(html_738ed10e63f310ae9879de3bf96b970b);
+            
+        
+
+        marker_80a204fff6bceea4cf7199fc5b67fe0a.bindPopup(popup_8877b1aa35d41a02e30bbb7bd978f881)
+        ;
+
+        
+    
+    
+            marker_80a204fff6bceea4cf7199fc5b67fe0a.bindTooltip(
+                `<div>
+                     <b></b> Tioga Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8780ea7aaf06dc987f88f152b8b2e1f = L.marker(
+                [34.7244, -114.513],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_b3a59d8fd05596f96253515ebe582f23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_d8780ea7aaf06dc987f88f152b8b2e1f.setIcon(icon_b3a59d8fd05596f96253515ebe582f23);
+        
+    
+        var popup_080177f5c9314da495d519bf8658c252 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4a8b8881d3ec624caf9b00e6ce9ecad = $(`<div id="html_f4a8b8881d3ec624caf9b00e6ce9ecad" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Mojave Center<br><sup><b>Year Est:</b> 1996<br><b>State:</b> CA<br><b>County:</b> nan<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 550<br><b>Numcust:</b> 7<br><b>Avgdaily:</b> 450<br><b>Status:</b></sup> Inactive 03</div>`)[0];
+                popup_080177f5c9314da495d519bf8658c252.setContent(html_f4a8b8881d3ec624caf9b00e6ce9ecad);
+            
+        
+
+        marker_d8780ea7aaf06dc987f88f152b8b2e1f.bindPopup(popup_080177f5c9314da495d519bf8658c252)
+        ;
+
+        
+    
+    
+            marker_d8780ea7aaf06dc987f88f152b8b2e1f.bindTooltip(
+                `<div>
+                     <b></b> Mojave Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed1a9aebad0d498f2819fb34ffb866bf = L.marker(
+                [38.4049, -121.914],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_b9df2b2929e986844fb8d77c602dad50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_ed1a9aebad0d498f2819fb34ffb866bf.setIcon(icon_b9df2b2929e986844fb8d77c602dad50);
+        
+    
+        var popup_a0574526e3fca7bf9345bc7f2c17924a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac640022733a1b8847f7a178eaf73fed = $(`<div id="html_ac640022733a1b8847f7a178eaf73fed" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Golden Gate Center<br><sup><b>Year Est:</b> 1996<br><b>State:</b> CA<br><b>County:</b> Various<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 1881<br><b>Numcust:</b> 20<br><b>Avgdaily:</b> 2000<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_a0574526e3fca7bf9345bc7f2c17924a.setContent(html_ac640022733a1b8847f7a178eaf73fed);
+            
+        
+
+        marker_ed1a9aebad0d498f2819fb34ffb866bf.bindPopup(popup_a0574526e3fca7bf9345bc7f2c17924a)
+        ;
+
+        
+    
+    
+            marker_ed1a9aebad0d498f2819fb34ffb866bf.bindTooltip(
+                `<div>
+                     <b></b> Golden Gate Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2d22a2a1246def6fd41a3f09edac58c = L.marker(
+                [49.0005, -122.22],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_0c572cad74f9c45c6ebb07247a6fc64e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e2d22a2a1246def6fd41a3f09edac58c.setIcon(icon_0c572cad74f9c45c6ebb07247a6fc64e);
+        
+    
+        var popup_f8e2b8396876e364a2a1666407495224 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e04acf5c28c297c3edbb5958378a375 = $(`<div id="html_5e04acf5c28c297c3edbb5958378a375" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Sumas Center<br><sup><b>Year Est:</b> 1994<br><b>State:</b> BC<br><b>County:</b> British Columbia<br><b>Rates:</b> NEB Tariff<br><b>Maxthru:</b> 1700<br><b>Numcust:</b> 120<br><b>Avgdaily:</b> 1000<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_f8e2b8396876e364a2a1666407495224.setContent(html_5e04acf5c28c297c3edbb5958378a375);
+            
+        
+
+        marker_e2d22a2a1246def6fd41a3f09edac58c.bindPopup(popup_f8e2b8396876e364a2a1666407495224)
+        ;
+
+        
+    
+    
+            marker_e2d22a2a1246def6fd41a3f09edac58c.bindTooltip(
+                `<div>
+                     <b></b> Sumas Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e4eaf68565eb21be9b2e39f9a9c2b42 = L.marker(
+                [31.2367, -103.169],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_cb4ae1b2d7915284922b503b9c731d38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_4e4eaf68565eb21be9b2e39f9a9c2b42.setIcon(icon_cb4ae1b2d7915284922b503b9c731d38);
+        
+    
+        var popup_bec0a4afd3286b5b31d8f8153ae3f1b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9883826bab9a355b74a1c4986dd7c1a = $(`<div id="html_f9883826bab9a355b74a1c4986dd7c1a" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Waha (Encina) Hub<br><sup><b>Year Est:</b> 1995<br><b>State:</b> TX<br><b>County:</b> Reeves<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 200<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 25<br><b>Status:</b></sup> Inactive 08</div>`)[0];
+                popup_bec0a4afd3286b5b31d8f8153ae3f1b0.setContent(html_f9883826bab9a355b74a1c4986dd7c1a);
+            
+        
+
+        marker_4e4eaf68565eb21be9b2e39f9a9c2b42.bindPopup(popup_bec0a4afd3286b5b31d8f8153ae3f1b0)
+        ;
+
+        
+    
+    
+            marker_4e4eaf68565eb21be9b2e39f9a9c2b42.bindTooltip(
+                `<div>
+                     <b></b> Waha (Encina) Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d80829cfc7337b13b08b33449c22f22 = L.marker(
+                [37.5565, -99.2558],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_10fd126bca0c41f8c7437bca584f14ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4d80829cfc7337b13b08b33449c22f22.setIcon(icon_10fd126bca0c41f8c7437bca584f14ec);
+        
+    
+        var popup_a1e97cc8f79cc52ed1efcfdcea37946f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_976c810b5e09d63518aef8afb468d10f = $(`<div id="html_976c810b5e09d63518aef8afb468d10f" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Kiowa Hub<br><sup><b>Year Est:</b> 0<br><b>State:</b> KS<br><b>County:</b> Kiowa<br><b>Rates:</b>  <br><b>Maxthru:</b> 0<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Canceled 02</div>`)[0];
+                popup_a1e97cc8f79cc52ed1efcfdcea37946f.setContent(html_976c810b5e09d63518aef8afb468d10f);
+            
+        
+
+        marker_4d80829cfc7337b13b08b33449c22f22.bindPopup(popup_a1e97cc8f79cc52ed1efcfdcea37946f)
+        ;
+
+        
+    
+    
+            marker_4d80829cfc7337b13b08b33449c22f22.bindTooltip(
+                `<div>
+                     <b></b> Kiowa Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd09e066af9f94d522da316f764add0e = L.marker(
+                [30.496, -88.2277],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_dd841c65c5f83818604b948ab20bff31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd09e066af9f94d522da316f764add0e.setIcon(icon_dd841c65c5f83818604b948ab20bff31);
+        
+    
+        var popup_1ee9825ffb5de3f957a90e88214a11d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97e03be859db7f5371fdfba057a5044f = $(`<div id="html_97e03be859db7f5371fdfba057a5044f" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Mobay Storage Hub<br><sup><b>Year Est:</b> 2012<br><b>State:</b> AL<br><b>County:</b> Mobile<br><b>Rates:</b>  <br><b>Maxthru:</b> 0<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Proposed 10</div>`)[0];
+                popup_1ee9825ffb5de3f957a90e88214a11d1.setContent(html_97e03be859db7f5371fdfba057a5044f);
+            
+        
+
+        marker_bd09e066af9f94d522da316f764add0e.bindPopup(popup_1ee9825ffb5de3f957a90e88214a11d1)
+        ;
+
+        
+    
+    
+            marker_bd09e066af9f94d522da316f764add0e.bindTooltip(
+                `<div>
+                     <b></b> Mobay Storage Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e738e2c707a8d0041150cda253218e9e = L.marker(
+                [40.9407, -104.796],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_14835d128580c5af5fc7de520fed1a30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e738e2c707a8d0041150cda253218e9e.setIcon(icon_14835d128580c5af5fc7de520fed1a30);
+        
+    
+        var popup_72a021156cee89791bb305e12714d857 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1101ea4ad1c78d0648f1065cc0798cdf = $(`<div id="html_1101ea4ad1c78d0648f1065cc0798cdf" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Cheyenne Hub<br><sup><b>Year Est:</b> 2000<br><b>State:</b> CO<br><b>County:</b> Weld<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 2625<br><b>Numcust:</b> 40<br><b>Avgdaily:</b> 1800<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_72a021156cee89791bb305e12714d857.setContent(html_1101ea4ad1c78d0648f1065cc0798cdf);
+            
+        
+
+        marker_e738e2c707a8d0041150cda253218e9e.bindPopup(popup_72a021156cee89791bb305e12714d857)
+        ;
+
+        
+    
+    
+            marker_e738e2c707a8d0041150cda253218e9e.bindTooltip(
+                `<div>
+                     <b></b> Cheyenne Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a44de38e0234363eff1bf90c3d199cab = L.marker(
+                [29.7248, -91.4846],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_0f4ee118bdaab434542e9a6b61997056 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_a44de38e0234363eff1bf90c3d199cab.setIcon(icon_0f4ee118bdaab434542e9a6b61997056);
+        
+    
+        var popup_d14c8b81ed453099251673854e8e14e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5238b208e23c4bffc61be8c1815f58e8 = $(`<div id="html_5238b208e23c4bffc61be8c1815f58e8" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Nautilus Hub<br><sup><b>Year Est:</b> 2000<br><b>State:</b> LA<br><b>County:</b> St Mary<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 600<br><b>Numcust:</b> 14<br><b>Avgdaily:</b> 350<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_d14c8b81ed453099251673854e8e14e8.setContent(html_5238b208e23c4bffc61be8c1815f58e8);
+            
+        
+
+        marker_a44de38e0234363eff1bf90c3d199cab.bindPopup(popup_d14c8b81ed453099251673854e8e14e8)
+        ;
+
+        
+    
+    
+            marker_a44de38e0234363eff1bf90c3d199cab.bindTooltip(
+                `<div>
+                     <b></b> Nautilus Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_747c209728f2a50db77ed53e17515418 = L.marker(
+                [42.0338, -121.372],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_0050bbd8af3975be478d3ef757c0e6cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_747c209728f2a50db77ed53e17515418.setIcon(icon_0050bbd8af3975be478d3ef757c0e6cb);
+        
+    
+        var popup_d1c7b0bbd5035574b50e0ec798836fdb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e493b71ee28617759a69a93f5ca8318a = $(`<div id="html_e493b71ee28617759a69a93f5ca8318a" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Malin Center<br><sup><b>Year Est:</b> 1994<br><b>State:</b> OR<br><b>County:</b> Klamath<br><b>Rates:</b> FERC Tariff<br><b>Maxthru:</b> 0<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Combined GTN</div>`)[0];
+                popup_d1c7b0bbd5035574b50e0ec798836fdb.setContent(html_e493b71ee28617759a69a93f5ca8318a);
+            
+        
+
+        marker_747c209728f2a50db77ed53e17515418.bindPopup(popup_d1c7b0bbd5035574b50e0ec798836fdb)
+        ;
+
+        
+    
+    
+            marker_747c209728f2a50db77ed53e17515418.bindTooltip(
+                `<div>
+                     <b></b> Malin Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1eaed42d9be90e9fc5ffa6c2f684c521 = L.marker(
+                [41.4577, -88.132],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_6a974f0943a1ba9c2b1d2d265badbba7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1eaed42d9be90e9fc5ffa6c2f684c521.setIcon(icon_6a974f0943a1ba9c2b1d2d265badbba7);
+        
+    
+        var popup_d63ada9dbfe269efe8bc40edb84b87a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cff11d4b31baf49ff988734a2cd9c918 = $(`<div id="html_cff11d4b31baf49ff988734a2cd9c918" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> ANR Joliet Hub<br><sup><b>Year Est:</b> 2003<br><b>State:</b> IL<br><b>County:</b> Will<br><b>Rates:</b> Market & Tarif<br><b>Maxthru:</b> 1200<br><b>Numcust:</b> 60<br><b>Avgdaily:</b> 600<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_d63ada9dbfe269efe8bc40edb84b87a1.setContent(html_cff11d4b31baf49ff988734a2cd9c918);
+            
+        
+
+        marker_1eaed42d9be90e9fc5ffa6c2f684c521.bindPopup(popup_d63ada9dbfe269efe8bc40edb84b87a1)
+        ;
+
+        
+    
+    
+            marker_1eaed42d9be90e9fc5ffa6c2f684c521.bindTooltip(
+                `<div>
+                     <b></b> ANR Joliet Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e21c7c29dbe6ed90e656d252b78eb6c = L.marker(
+                [31.2929, -88.0739],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_9db7213f0b22c7b4f5f7822c8a1ac206 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9e21c7c29dbe6ed90e656d252b78eb6c.setIcon(icon_9db7213f0b22c7b4f5f7822c8a1ac206);
+        
+    
+        var popup_a91fe991cccfa24fb4a961d409879702 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a52f9f81b53ed18a2880a08b8aec701 = $(`<div id="html_0a52f9f81b53ed18a2880a08b8aec701" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Mississippi Hub<br><sup><b>Year Est:</b> 2009<br><b>State:</b> MS<br><b>County:</b> Washington<br><b>Rates:</b> Market-based<br><b>Maxthru:</b> 1200<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Proposed 09</div>`)[0];
+                popup_a91fe991cccfa24fb4a961d409879702.setContent(html_0a52f9f81b53ed18a2880a08b8aec701);
+            
+        
+
+        marker_9e21c7c29dbe6ed90e656d252b78eb6c.bindPopup(popup_a91fe991cccfa24fb4a961d409879702)
+        ;
+
+        
+    
+    
+            marker_9e21c7c29dbe6ed90e656d252b78eb6c.bindTooltip(
+                `<div>
+                     <b></b> Mississippi Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d210bcee6cdbf9abc58036604bd8973 = L.marker(
+                [29.8955, -92.0631],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_2168ab2301959db05d029a886993b3e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_5d210bcee6cdbf9abc58036604bd8973.setIcon(icon_2168ab2301959db05d029a886993b3e4);
+        
+    
+        var popup_c825629a576794b13b5f8734524ca97b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13ae96b8d779472bf5158fac0baf7812 = $(`<div id="html_13ae96b8d779472bf5158fac0baf7812" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Henry Hub<br><sup><b>Year Est:</b> 1988<br><b>State:</b> LA<br><b>County:</b> Vermillion<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 2500<br><b>Numcust:</b> 180<br><b>Avgdaily:</b> 600<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_c825629a576794b13b5f8734524ca97b.setContent(html_13ae96b8d779472bf5158fac0baf7812);
+            
+        
+
+        marker_5d210bcee6cdbf9abc58036604bd8973.bindPopup(popup_c825629a576794b13b5f8734524ca97b)
+        ;
+
+        
+    
+    
+            marker_5d210bcee6cdbf9abc58036604bd8973.bindTooltip(
+                `<div>
+                     <b></b> Henry Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a69c84eab8db81fcca8d68d3ca3ebc1d = L.marker(
+                [31.9134, -90.5876],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_f57bbdf4434fab5f5928d4e76817c59f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a69c84eab8db81fcca8d68d3ca3ebc1d.setIcon(icon_f57bbdf4434fab5f5928d4e76817c59f);
+        
+    
+        var popup_e3c539ad9f14786f76c6c646e3c1576c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2364cfb0c0a99fec89438fa59b8588b1 = $(`<div id="html_2364cfb0c0a99fec89438fa59b8588b1" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Copiah Storage Hub<br><sup><b>Year Est:</b> 2012<br><b>State:</b> MS<br><b>County:</b> Copiah<br><b>Rates:</b>  <br><b>Maxthru:</b> 1300<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Proposed 11</div>`)[0];
+                popup_e3c539ad9f14786f76c6c646e3c1576c.setContent(html_2364cfb0c0a99fec89438fa59b8588b1);
+            
+        
+
+        marker_a69c84eab8db81fcca8d68d3ca3ebc1d.bindPopup(popup_e3c539ad9f14786f76c6c646e3c1576c)
+        ;
+
+        
+    
+    
+            marker_a69c84eab8db81fcca8d68d3ca3ebc1d.bindTooltip(
+                `<div>
+                     <b></b> Copiah Storage Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d213a5fc9de9de3bd18e2ede9632aa1f = L.marker(
+                [48.9958, -116.188],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_2766ed23e9a13b59b438f11d193f49dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_d213a5fc9de9de3bd18e2ede9632aa1f.setIcon(icon_2766ed23e9a13b59b438f11d193f49dd);
+        
+    
+        var popup_5898552ce8997cdc20ed8cc758bb2b06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cbcf29dfd4ebfd3a9c0d23c31e8f5ac = $(`<div id="html_5cbcf29dfd4ebfd3a9c0d23c31e8f5ac" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Kingsgate Center<br><sup><b>Year Est:</b> 1994<br><b>State:</b> ID<br><b>County:</b> Boundary<br><b>Rates:</b> FERC Tariff<br><b>Maxthru:</b> 0<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Combined GTN</div>`)[0];
+                popup_5898552ce8997cdc20ed8cc758bb2b06.setContent(html_5cbcf29dfd4ebfd3a9c0d23c31e8f5ac);
+            
+        
+
+        marker_d213a5fc9de9de3bd18e2ede9632aa1f.bindPopup(popup_5898552ce8997cdc20ed8cc758bb2b06)
+        ;
+
+        
+    
+    
+            marker_d213a5fc9de9de3bd18e2ede9632aa1f.bindTooltip(
+                `<div>
+                     <b></b> Kingsgate Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df249faf3167476dc6e5d96eb490a206 = L.marker(
+                [41.7684, -110.399],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_649a87a0253ae1d8ad114d978f09a31b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_df249faf3167476dc6e5d96eb490a206.setIcon(icon_649a87a0253ae1d8ad114d978f09a31b);
+        
+    
+        var popup_93d7ed6ccfc549c3dd79e59bff4a875d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8399a1d89e16bb96658661dabd4d8df8 = $(`<div id="html_8399a1d89e16bb96658661dabd4d8df8" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Opal Hub<br><sup><b>Year Est:</b> 1999<br><b>State:</b> WY<br><b>County:</b> Lincoln<br><b>Rates:</b> nan<br><b>Maxthru:</b> 3100<br><b>Numcust:</b> 80<br><b>Avgdaily:</b> 1450<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_93d7ed6ccfc549c3dd79e59bff4a875d.setContent(html_8399a1d89e16bb96658661dabd4d8df8);
+            
+        
+
+        marker_df249faf3167476dc6e5d96eb490a206.bindPopup(popup_93d7ed6ccfc549c3dd79e59bff4a875d)
+        ;
+
+        
+    
+    
+            marker_df249faf3167476dc6e5d96eb490a206.bindTooltip(
+                `<div>
+                     <b></b> Opal Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef8d17c19309b348ae5a30fd50286d1d = L.marker(
+                [31.3184, -88.6853],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_97d5a10b5d8e11364c5f79c17ceb8e4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ef8d17c19309b348ae5a30fd50286d1d.setIcon(icon_97d5a10b5d8e11364c5f79c17ceb8e4f);
+        
+    
+        var popup_4a21f3d7f3d6d33c53af249bbbd80143 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6929ec2ca70174633ac30b21e410c75 = $(`<div id="html_c6929ec2ca70174633ac30b21e410c75" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Southeast Storage Hub<br><sup><b>Year Est:</b> 2007<br><b>State:</b> MS<br><b>County:</b> Greene<br><b>Rates:</b>  <br><b>Maxthru:</b> 600<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 600<br><b>Status:</b></sup> Canceled 07</div>`)[0];
+                popup_4a21f3d7f3d6d33c53af249bbbd80143.setContent(html_c6929ec2ca70174633ac30b21e410c75);
+            
+        
+
+        marker_ef8d17c19309b348ae5a30fd50286d1d.bindPopup(popup_4a21f3d7f3d6d33c53af249bbbd80143)
+        ;
+
+        
+    
+    
+            marker_ef8d17c19309b348ae5a30fd50286d1d.bindTooltip(
+                `<div>
+                     <b></b> Southeast Storage Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfcbe58b8b2e81fe89cf5a379cb74f5b = L.marker(
+                [30.1063, -94.7793],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_12b84738436d7bbc7f8c0d7c2ea85fae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_cfcbe58b8b2e81fe89cf5a379cb74f5b.setIcon(icon_12b84738436d7bbc7f8c0d7c2ea85fae);
+        
+    
+        var popup_1dfc8839ac7f95166a064c070a3f2588 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d87ebf145fe0fd816f8b899710fcc5c8 = $(`<div id="html_d87ebf145fe0fd816f8b899710fcc5c8" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Houston Hub & Transportation<br><sup><b>Year Est:</b> 2010<br><b>State:</b> TX<br><b>County:</b> Liberty<br><b>Rates:</b>  <br><b>Maxthru:</b> 1000<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 1000<br><b>Status:</b></sup> Proposed 10</div>`)[0];
+                popup_1dfc8839ac7f95166a064c070a3f2588.setContent(html_d87ebf145fe0fd816f8b899710fcc5c8);
+            
+        
+
+        marker_cfcbe58b8b2e81fe89cf5a379cb74f5b.bindPopup(popup_1dfc8839ac7f95166a064c070a3f2588)
+        ;
+
+        
+    
+    
+            marker_cfcbe58b8b2e81fe89cf5a379cb74f5b.bindTooltip(
+                `<div>
+                     <b></b> Houston Hub & Transportation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f118b753ebfd9250fd03ed176724528 = L.marker(
+                [31.0533, -102.842],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_6ea572f3bdd9f3e5629670b567f27272 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_5f118b753ebfd9250fd03ed176724528.setIcon(icon_6ea572f3bdd9f3e5629670b567f27272);
+        
+    
+        var popup_3a51ec96ddd953ba7492df00be9fa5cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c7a2d5ffec4bed20671f0bb1fd9a566 = $(`<div id="html_2c7a2d5ffec4bed20671f0bb1fd9a566" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Waha  (EPGT) Texas Hub<br><sup><b>Year Est:</b> 1995<br><b>State:</b> TX<br><b>County:</b> Pecos<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 300<br><b>Numcust:</b> 30<br><b>Avgdaily:</b> 250<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_3a51ec96ddd953ba7492df00be9fa5cf.setContent(html_2c7a2d5ffec4bed20671f0bb1fd9a566);
+            
+        
+
+        marker_5f118b753ebfd9250fd03ed176724528.bindPopup(popup_3a51ec96ddd953ba7492df00be9fa5cf)
+        ;
+
+        
+    
+    
+            marker_5f118b753ebfd9250fd03ed176724528.bindTooltip(
+                `<div>
+                     <b></b> Waha  (EPGT) Texas Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_785760f1bb211580dce2283d7e3e2915 = L.marker(
+                [40.0895, -108.17],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_5c5f4ea7e9512f5be3f3a38b71e1b23d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_785760f1bb211580dce2283d7e3e2915.setIcon(icon_5c5f4ea7e9512f5be3f3a38b71e1b23d);
+        
+    
+        var popup_464e1451c48621949f9c213e9babd85b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6de7b5196573f4d6adc2df318a68a472 = $(`<div id="html_6de7b5196573f4d6adc2df318a68a472" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> White River Hub<br><sup><b>Year Est:</b> 2008<br><b>State:</b> CO<br><b>County:</b> Rio Blanco<br><b>Rates:</b> Market Based<br><b>Maxthru:</b> 2025<br><b>Numcust:</b> 6<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_464e1451c48621949f9c213e9babd85b.setContent(html_6de7b5196573f4d6adc2df318a68a472);
+            
+        
+
+        marker_785760f1bb211580dce2283d7e3e2915.bindPopup(popup_464e1451c48621949f9c213e9babd85b)
+        ;
+
+        
+    
+    
+            marker_785760f1bb211580dce2283d7e3e2915.bindTooltip(
+                `<div>
+                     <b></b> White River Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b4ddf04cab2f0f4f6060585ded556d0 = L.marker(
+                [32.5077, -91.591],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_ee12450d1621a822c67ea2791befbe97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_6b4ddf04cab2f0f4f6060585ded556d0.setIcon(icon_ee12450d1621a822c67ea2791befbe97);
+        
+    
+        var popup_d2883758f220fafd17a3197b1fb43c68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e80303fb57d7e6b3de084d8e34083760 = $(`<div id="html_e80303fb57d7e6b3de084d8e34083760" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Eagle Hub<br><sup><b>Year Est:</b> 0<br><b>State:</b> LA<br><b>County:</b> Richland<br><b>Rates:</b>  <br><b>Maxthru:</b> 2000<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 2000<br><b>Status:</b></sup> Canceled 08</div>`)[0];
+                popup_d2883758f220fafd17a3197b1fb43c68.setContent(html_e80303fb57d7e6b3de084d8e34083760);
+            
+        
+
+        marker_6b4ddf04cab2f0f4f6060585ded556d0.bindPopup(popup_d2883758f220fafd17a3197b1fb43c68)
+        ;
+
+        
+    
+    
+            marker_6b4ddf04cab2f0f4f6060585ded556d0.bindTooltip(
+                `<div>
+                     <b></b> Eagle Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4675a7a17f870564945c0d4bb1c6eba2 = L.marker(
+                [40.6563, -80.0855],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_175ac3e401973820753cc2a5e9401848 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4675a7a17f870564945c0d4bb1c6eba2.setIcon(icon_175ac3e401973820753cc2a5e9401848);
+        
+    
+        var popup_34007188577df964db53893a13bda736 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4dd346c42e83b931797b7c16acb6adb = $(`<div id="html_a4dd346c42e83b931797b7c16acb6adb" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Marcellus Eastern Access Hub<br><sup><b>Year Est:</b> 2011<br><b>State:</b> PA<br><b>County:</b>  <br><b>Rates:</b>  <br><b>Maxthru:</b> 0<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Proposed 11</div>`)[0];
+                popup_34007188577df964db53893a13bda736.setContent(html_a4dd346c42e83b931797b7c16acb6adb);
+            
+        
+
+        marker_4675a7a17f870564945c0d4bb1c6eba2.bindPopup(popup_34007188577df964db53893a13bda736)
+        ;
+
+        
+    
+    
+            marker_4675a7a17f870564945c0d4bb1c6eba2.bindTooltip(
+                `<div>
+                     <b></b> Marcellus Eastern Access Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f36149fe96316714f13c62602a01ed00 = L.marker(
+                [30.1297, -93.8421],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_f25da6de403e9ab72a72af375313e474 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_f36149fe96316714f13c62602a01ed00.setIcon(icon_f25da6de403e9ab72a72af375313e474);
+        
+    
+        var popup_be206f8dc18b594a579643734ae1ff78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9964a142d8ec16e3c5a966307d5b4566 = $(`<div id="html_9964a142d8ec16e3c5a966307d5b4566" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Southeast Hub<br><sup><b>Year Est:</b> 0<br><b>State:</b> TX<br><b>County:</b> Orange<br><b>Rates:</b> Max - Discount<br><b>Maxthru:</b> 0<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Canceled 08</div>`)[0];
+                popup_be206f8dc18b594a579643734ae1ff78.setContent(html_9964a142d8ec16e3c5a966307d5b4566);
+            
+        
+
+        marker_f36149fe96316714f13c62602a01ed00.bindPopup(popup_be206f8dc18b594a579643734ae1ff78)
+        ;
+
+        
+    
+    
+            marker_f36149fe96316714f13c62602a01ed00.bindTooltip(
+                `<div>
+                     <b></b> Southeast Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec4df9a40ab916160a62a6af90b0480c = L.marker(
+                [40.0377, -108.2],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_065d85be5ba7f7fd9ea39c26610ae09d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ec4df9a40ab916160a62a6af90b0480c.setIcon(icon_065d85be5ba7f7fd9ea39c26610ae09d);
+        
+    
+        var popup_fea0105cbd76e18ec34e01d6b9d6db97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1490d28f112254c172748b9d4febad12 = $(`<div id="html_1490d28f112254c172748b9d4febad12" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Greasewood Hub<br><sup><b>Year Est:</b> 0<br><b>State:</b> CO<br><b>County:</b> Rio Blanco<br><b>Rates:</b> Market Based<br><b>Maxthru:</b> 2025<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Informal Ops</div>`)[0];
+                popup_fea0105cbd76e18ec34e01d6b9d6db97.setContent(html_1490d28f112254c172748b9d4febad12);
+            
+        
+
+        marker_ec4df9a40ab916160a62a6af90b0480c.bindPopup(popup_fea0105cbd76e18ec34e01d6b9d6db97)
+        ;
+
+        
+    
+    
+            marker_ec4df9a40ab916160a62a6af90b0480c.bindTooltip(
+                `<div>
+                     <b></b> Greasewood Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9659c62a81185325103bf5cb392e03a8 = L.marker(
+                [39.9523, -108.189],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_1d4b2df3ed0edd6a9e5ccb888ccc727d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9659c62a81185325103bf5cb392e03a8.setIcon(icon_1d4b2df3ed0edd6a9e5ccb888ccc727d);
+        
+    
+        var popup_8c39bcfc31b98f61f538f33afcca3784 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c067fb65a3179bb365ede5f1a6c288ed = $(`<div id="html_c067fb65a3179bb365ede5f1a6c288ed" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Meeker Hub<br><sup><b>Year Est:</b> 0<br><b>State:</b> CO<br><b>County:</b> Rio Blanco<br><b>Rates:</b> Market Based<br><b>Maxthru:</b> 0<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 0<br><b>Status:</b></sup> Informal Ops</div>`)[0];
+                popup_8c39bcfc31b98f61f538f33afcca3784.setContent(html_c067fb65a3179bb365ede5f1a6c288ed);
+            
+        
+
+        marker_9659c62a81185325103bf5cb392e03a8.bindPopup(popup_8c39bcfc31b98f61f538f33afcca3784)
+        ;
+
+        
+    
+    
+            marker_9659c62a81185325103bf5cb392e03a8.bindTooltip(
+                `<div>
+                     <b></b> Meeker Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aaa00470bfabb897db20c187c7dc33d6 = L.marker(
+                [29.9762, -91.9863],
+                {"maxWidth": "80%", "zoomStart": 7}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var icon_19e9b6738eef29cb05dbfb0d05abf842 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_aaa00470bfabb897db20c187c7dc33d6.setIcon(icon_19e9b6738eef29cb05dbfb0d05abf842);
+        
+    
+        var popup_37bbf3ea734cae6c23c8d9d1e4497106 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93939ca12e84ef2152c919a0185e13d0 = $(`<div id="html_93939ca12e84ef2152c919a0185e13d0" style="width: 100.0%; height: 100.0%;"><u><b>Hub Name:</b></u> Jefferson Island Storage Hub<br><sup><b>Year Est:</b> 1998<br><b>State:</b> LA<br><b>County:</b> Iberia<br><b>Rates:</b> Market Based R<br><b>Maxthru:</b> 720<br><b>Numcust:</b> 0<br><b>Avgdaily:</b> 500<br><b>Status:</b></sup> Operational</div>`)[0];
+                popup_37bbf3ea734cae6c23c8d9d1e4497106.setContent(html_93939ca12e84ef2152c919a0185e13d0);
+            
+        
+
+        marker_aaa00470bfabb897db20c187c7dc33d6.bindPopup(popup_37bbf3ea734cae6c23c8d9d1e4497106)
+        ;
+
+        
+    
+    
+            marker_aaa00470bfabb897db20c187c7dc33d6.bindTooltip(
+                `<div>
+                     <b></b> Jefferson Island Storage Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var heat_map_2cded9d19d07d80475ba0b68a5c8a3f7 = L.heatLayer(
+                [[36.6864, -107.957], [35.8337, -100.459], [32.1596, -94.2789], [41.5002, -88.2639], [41.3979, -77.79], [29.831, -94.1679], [29.774, -95.3936], [29.8331, -95.8512], [39.4159, -84.1811], [29.964, -92.4296], [30.1568, -94.8578], [32.7035, -92.0616], [29.9707, -91.1768], [31.629, -103.109], [31.2251, -103.113], [30.2695, -92.3574], [30.9118, -92.5285], [29.7501, -95.7861], [30.8163, -102.331], [27.5488, -97.6003], [42.2222, -83.4014], [37.8699, -97.7721], [40.5819, -78.1274], [41.1416, -78.9074], [41.7912, -110.306], [41.2974, -110.508], [35.8263, -119.373], [44.6846, -121.002], [34.6888, -119.368], [32.4354, -91.5186], [42.4401, -77.461], [42.6581, -74.1785], [41.9222, -77.1315], [34.7244, -114.513], [38.4049, -121.914], [49.0005, -122.22], [31.2367, -103.169], [37.5565, -99.2558], [30.496, -88.2277], [40.9407, -104.796], [29.7248, -91.4846], [42.0338, -121.372], [41.4577, -88.132], [31.2929, -88.0739], [29.8955, -92.0631], [31.9134, -90.5876], [48.9958, -116.188], [41.7684, -110.399], [31.3184, -88.6853], [30.1063, -94.7793], [31.0533, -102.842], [40.0895, -108.17], [32.5077, -91.591], [40.6563, -80.0855], [30.1297, -93.8421], [40.0377, -108.2], [39.9523, -108.189], [29.9762, -91.9863]],
+                {"blur": 18, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var measure_control_1848d996467ae12f00ac0ce01dfaa17a = new L.Control.Measure(
+                {"position": "topright", "primaryAreaUnit": "sqmeters", "primaryLengthUnit": "meters", "secondaryAreaUnit": "acres", "secondaryLengthUnit": "miles"});
+            map_a3dbb8ccf97b9942c6a84e56ae4081ef.addControl(measure_control_1848d996467ae12f00ac0ce01dfaa17a);
+
+        
+    
+            var locate_control_9d1153a2a2733e9b38e29d65370f3dcd = L.control.locate(
+                {}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+            
+        
+    
+            var tile_layer_a919e0edd92b6367ae589398a5326342 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Esri", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+        
+    
+            var layer_control_64e533e32bd5544db1dfefb3da66b913 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_1df217ebedcc78949ed82b3613e55dec,
+                    "Esri Satellite" : tile_layer_a919e0edd92b6367ae589398a5326342,
+                },
+                overlays :  {
+                    "HeatMap" : heat_map_2cded9d19d07d80475ba0b68a5c8a3f7,
+                },
+            };
+            L.control.layers(
+                layer_control_64e533e32bd5544db1dfefb3da66b913.base_layers,
+                layer_control_64e533e32bd5544db1dfefb3da66b913.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_a3dbb8ccf97b9942c6a84e56ae4081ef);
+            tile_layer_a919e0edd92b6367ae589398a5326342.remove();
+        
+</script>
+</html>
